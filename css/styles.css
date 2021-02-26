@@ -13,7 +13,8 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --background-origin: #2f303a;
-  --main-font: "Roboto", sans-serif
+  --main-font: "Roboto", sans-serif;
+  --flex-gap: 30px;
 }
 
 body {
@@ -30,6 +31,14 @@ h6,
 p {
   margin: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding:0;
+}
+
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -166,6 +175,7 @@ min-height: 50px;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .feature .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -178,6 +188,21 @@ min-height: 50px;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
+  padding-top: 10px;
+}
+
+.feature {
+  /* outline: 1px solid tomato; */
+  display: flex;
+  margin-left: calc(-1*var(--flex-gap));
+}
+
+.feature > .feature-item {
+outline: 1px solid teal;
+flex-basis: calc(100%/4 - var(--flex-gap));
+margin-left: var(--flex-gap);
+margin-top: 94px;
+margin-bottom: 94px;
 }
 
 /*========Чем мы занимаемся========*/
@@ -187,12 +212,36 @@ min-height: 50px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+  padding-bottom: 50px;
 }
-
+.works {
+    display: flex;
+    margin-left: calc(-1*var(--flex-gap));
+    min-width: 370px;
+    padding: 0;
+}
+.works-item {
+  outline: 1px solid teal;
+  flex-basis: calc(100%/3 - var(--flex-gap));
+  margin-left: var(--flex-gap);
+  padding-bottom: 94px;
+}
 /*========Team========*/
 .section-team {
   background-color: #e5e5e5;
 }
+
+.card-team > .item-team {
+  flex-basis: auto; 
+  outline: 1px solid teal;
+}
+
+
+
+.card-team {
+ flex-basis: calc(100%/4 - var(--flex-gap)); 
+}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -200,14 +249,20 @@ min-height: 50px;
   line-height: 1.19;
   /* identical to box height */
   text-align: center;
+  margin-top: 30px;
 }
+
 .team-position {
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
   text-align: center;
+  margin-top: 10px;
 }
 
+.card-content {
+
+}
 /*========Footer========*/
 .footer {
   background: var(--background-origin);
