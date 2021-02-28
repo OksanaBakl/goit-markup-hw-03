@@ -43,7 +43,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
@@ -79,7 +79,7 @@ img {
 .page-header {
   display: flex;
   align-items: center;
-  
+  /* background-color: aqua; */
 }
 
 .main-nav {
@@ -154,8 +154,10 @@ left: 0px;
 top: 80px;
 } */
 .hero {
-  height: 600px;
+  /* height: 600px; */
   background: var(--background-origin);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -166,7 +168,6 @@ top: 80px;
   text-transform: uppercase;
   color: #ffffff;
   background: #2f303a;
-  padding-top: 200px;
   padding-bottom: 30px;
   padding-right: 437px;
   padding-left: 467px;
@@ -186,10 +187,10 @@ top: 80px;
   min-width: 200px;
   min-height: 50px;
   margin-top: 0px;
-  margin-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 32px;
+  border-radius: 4px
 }
 
 .button:hover,
@@ -198,6 +199,12 @@ top: 80px;
 }
 
 /*========Feature list========*/
+
+.section-feature {
+  /* background-color: aqua; */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -238,11 +245,15 @@ top: 80px;
   outline: 1px solid teal;
   flex-basis: calc(100% / 4 - var(--flex-gap));
   margin-left: var(--flex-gap);
-  margin-top: 94px;
-  margin-bottom: 94px;
+
 }
 
 /*========Чем мы занимаемся========*/
+.section-works {
+  /* background-color: aqua; */
+  /* padding-top: 94px; */
+  padding-bottom: 94px;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -261,7 +272,6 @@ top: 80px;
   outline: 1px solid teal;
   flex-basis: calc(100% / 3 - var(--flex-gap));
   margin-left: var(--flex-gap);
-  margin-bottom: 94px;
   /* display: block; */
 }
 .works-img {
@@ -271,10 +281,8 @@ top: 80px;
 /*========Team========*/
 .section-team {
   background-color: #e5e5e5;
-}
-
-.section-team .section-title {
-  padding-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .card-team {
@@ -289,7 +297,6 @@ top: 80px;
   outline: 1px solid teal;
   margin-left: var(--flex-gap);
   margin-top: var(--flex-gap);
-  margin-bottom: 94px;
 }
 
 .team-title {
@@ -345,8 +352,8 @@ top: 80px;
 .footer-container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
+  width: 1200px;
+  padding-left: 15px; 
   padding-right: 15px;
   outline: 2px solid tomato;
 }
@@ -392,7 +399,6 @@ top: 80px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 94px;
 }
 
 .filters > .filters-item {
@@ -427,13 +433,15 @@ top: 80px;
 
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
-  margin: -15;
 
+  margin: -15;
  /* calc(-1 * var(--flex-gap)) */
 }
 
-
+  .container-filters > .container {
+      padding-bottom: 94px;
+      padding-top: 94px;
+  }
 .portfolio > .portfolio-item {
   flex-basis: calc(100% / 3 - var(--flex-gap));
   /* width: 380px; */
@@ -447,4 +455,5 @@ top: 80px;
 }
 .portfolio-item:nth-last-child(-n + 3){
   margin-bottom: 0;
+
 
