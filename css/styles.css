@@ -321,7 +321,7 @@ top: 80px;
   color: #ffffff;
 }
 
-.footer-container > .invert-logo {
+.footer-section > .invert-logo {
   padding-top: 60px;
   padding-bottom: 20px;
 }
@@ -340,17 +340,17 @@ top: 80px;
 .link-tel {
   padding-bottom: 60px;
 }
-.footer-container .link {
+.footer-section .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.footer-container {
+.footer-section {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /*========стили для портфолио========*/
