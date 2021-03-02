@@ -239,7 +239,7 @@ top: 80px;
 }
 
 .feature > .feature-item {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   flex-basis: calc(100% / 4 - var(--flex-gap));
   margin-left: var(--flex-gap);
 }
