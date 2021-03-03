@@ -203,7 +203,7 @@ top: 80px;
 .section-feature {
   /* background-color: aqua; */
   padding-top: 94px;
-  padding-bottom: 47px;
+ 
 }
 
 .visually-hidden {
@@ -250,7 +250,7 @@ top: 80px;
 /*========Чем мы занимаемся========*/
 .section-works {
   /* background-color: aqua; */
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-title {
@@ -279,7 +279,7 @@ top: 80px;
 
 /*========Team========*/
 .section-team {
-  background-color: #e5e5e5;
+  background-color: #F5F4FA;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -321,15 +321,17 @@ top: 80px;
 
 /*========Footer========*/
 .footer {
-  background: var(--background-origin);
+background: var(--background-origin);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .invert-logo .logo {
   color: #ffffff;
 }
 
-.footer-section > .invert-logo {
-  padding-bottom: 20px;
+ .invert-logo {
+  margin-bottom: 20px;
 }
 
 .adress {
@@ -338,26 +340,18 @@ top: 80px;
   font-style: normal;
   line-height: 1.71;
   /* or 171% */
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .link-mail {
   margin-bottom: 9px;
 }
 
-.footer-section .link {
+.footer .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.footer-section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /* outline: 2px solid tomato; */
-}
+
+
 
 /*========стили для портфолио========*/
 /*======== FILTERS ========*/
@@ -434,29 +428,25 @@ top: 80px;
   background-color: var(--accent-color);
 }
 
-.portfolio {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: -15;
-  /* calc(-1 * var(--flex-gap)) */
-}
-
 .container-filters {
   padding-bottom: 94px;
   padding-top: 94px;
   /* background-color: blueviolet; */
 }
-.portfolio > .portfolio-item {
-  flex-basis: 370px;
-  /* min-width: 370px; */
-  margin: 15px;
-  /* margin-right: var(--flex-gap);
-  margin-bottom: var(--flex-gap); */
+
+.portfolio {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* calc(-1 * var(--flex-gap)) */
+}
+
+.portfolio-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .card > .card-content {
@@ -472,8 +462,7 @@ top: 80px;
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-item:nth-child(3n + 1) {
-  margin-left: 0;
+
 }
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
